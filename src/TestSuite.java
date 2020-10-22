@@ -9,8 +9,8 @@
 
 abstract public class TestSuite {
 
-    public int numberOfTests;
-    public int numberOfPassedTests;
+    private int numberOfTests;
+    private int numberOfPassedTests;
 
     public void runTestSuite() {
         testMethodList();
