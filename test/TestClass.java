@@ -9,6 +9,8 @@
  * all from int, double and long to Strings.
  ********************************************/
 
+import ZUnit.TestSuite;
+
 public class TestClass extends TestSuite {
 
     public static void main(String[] args) {

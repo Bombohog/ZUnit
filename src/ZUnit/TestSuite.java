@@ -1,11 +1,15 @@
 /********************************************
- * Project description
+ * Project ZUnit that is personalized/miniaturized
+ * JUnit.
  *
  * Created by: Lasse J. Kongsdal
  * Date: 19-10-2020
  *
- * Description of program
+ * ZUnit can test basic equations and alike
+ * all from int, double and long to Strings.
  ********************************************/
+
+package ZUnit;
 
 abstract public class TestSuite {
 
