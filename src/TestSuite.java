@@ -14,6 +14,7 @@ abstract public class TestSuite {
 
     public void runTestSuite() {
         testMethodList();
+        // prints a summary of the test results
         System.out.printf("\u001B[0m\nNumber of Tests: %d\nNumber of Tests passed: %d\nNumber of Tests Failed: %d", numberOfTests, numberOfPassedTests, numberOfTests - numberOfPassedTests);
     }
 
@@ -25,6 +26,7 @@ abstract public class TestSuite {
             System.out.println("\u001B[0m\nPASS:\n  Expected output: " + expected + "\n  Actual output: " + actual);
             numberOfPassedTests++;
         } else  {
+            // gets the name of the method getting tested and the line where the test is called from
             String name = Thread.currentThread().getStackTrace()[2].getMethodName();
             int linePos = Thread.currentThread().getStackTrace()[2].getLineNumber();
             System.out.printf("\u001B[31m\nFAIL:\n MethodName: %s Fail found at line: %d\n  Expected output: %s\n  Actual output: %s\n", name, linePos, expected, actual);
